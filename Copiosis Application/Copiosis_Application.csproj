@@ -335,6 +335,7 @@
       <LastGenOutput>CopiosisDBModel.cs</LastGenOutput>
     </Content>
     <None Include="Properties\PublishProfiles\Capstone BB.pubxml" />
+    <None Include="Properties\PublishProfiles\Copiosis_AWS.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
