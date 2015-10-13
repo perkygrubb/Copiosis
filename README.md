@@ -1,23 +1,18 @@
 # Copiosis
 
-This is the public repository for the CS469/470 Capstone Project for Copiosis at Portland State University.
+**Contributions are welcome.** Email info@copiosis.com if you have any questions about this site or Copiosis in general. Details about our work are in the wiki.
 
-## Server Setup
+## How to contribute?
 
-### Requirements
-* Microsoft Windows Server 2008 or higher (any SKU)
-* Microsoft IIS 7.0+
-* SQL Server 2012 Express
-* SQL Server 2012 Express Management Studio
-* .NET 3.5
+1.	Review our needs file to select something to contriubte to, or, if you have something else you want to contribute, start there please.  
+2. Before starting work on a new feature, enhancement, or fix, please create an issue and optionally assign it to yourself or a developer.  
+3.	Fork the repository and make your changes against the 'development' branch (not master).  
+4.	After making your changes in your fork, run tests and ensure that the page looks good and works with all supported browsers.  
+5.	If you have made a series of commits into the 'development' branch, please try to squash them into a small number of commits.  
+6.	Issue a Pull Request against the 'development' branch (not master).  
+7.	The admins will review your code and may optionally request conformance, functional or other changes. Work with them to resolve any issues.  
+8.	Upon acceptance, your code will be merged into the master branch and will become available for all.  
 
 
-### Installation
+Pardon our organization as we're just beginning to use GitHub and are figuring things out. More information on the way.
 
-1. Install Windows Server. It does not matter whether you use Web, Datacenter, Standard, or any other version -- but you are going to want the GUI, so select "Full Installation" **not "Server Core"**. The installer will reboot the computer.
-2. Enable Remote Desktop **only** if incoming RDP is blocked by your firewall. Implementing a VPN within your firewall and using that to connect is the only way to secure RDC (Remote Desktop Connection) and RDP (Remote Desktop Protocol). Go to 'Control Panel' > 'System and  Maintenance' > 'System' and click on 'Remote settings'. Enable connecting from any version of Remote Desktop, unless you are going to administer only from a Windows 7 or higher computer with the latest patches to Remote Desktop. 
-3. Select 'Roles' (Windows 2008 & 2008 R2) or 'Add Role' (2012 & 2012 R2) and add the Internet Information Service (IIS) role, following all defaults. We will customize the IIS in the second guide "IIS_Local_Development_Setup.pdf".
-4. Install the SQL Server 2012 Express, following all defaults to create a database called SQLEXPRESS.
-5. Install the SQL Server 2012 Express Management Studio. This installer does not ask any configuration questions.
-6. Check for updates using Windows Update, installing **at minimum** all related to .NET runtimes, IIS, security patches, and Remote Desktop if used. There will be over 2GB of updates total including the previous.
-7. Complete configuration using IIS_Local_Development_Setup.pdf
