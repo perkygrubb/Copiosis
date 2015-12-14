@@ -36,7 +36,7 @@ namespace Copiosis_Application.DB_Data
     
     /*  Credit to StackOverFlow user Martin Devillers for providing a method to output
         cleaner error messages: http://stackoverflow.com/a/15820506 */
-        public override int SaveChanges()
+    public override int SaveChanges()
     {
         try
         {
