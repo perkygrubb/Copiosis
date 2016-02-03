@@ -39,6 +39,16 @@ namespace Copiosis_Application.Filters
                 {
                     //set to default errsubject:
                     subject = "An internal error occured";
+                    Exception innerEx = filterContext.Exception.InnerException;
+                    if (innerEx != null || !(innerEx.Equals("")))
+                    {
+                        message = innerEx.Message; //Display InnerException Message
+                        while (innerEx.InnerException != null)
+                        {
+                            innerEx = innerEx.InnerException;
+                            message += "  |  " + innerEx.Message;
+                        }
+                    }
                 }
                 controllerTempData.Add("errorSubject", subject);
                 controllerTempData.Add("errorMessage", message);
